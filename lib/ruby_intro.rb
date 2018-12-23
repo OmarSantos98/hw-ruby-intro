@@ -2,7 +2,7 @@
 
 # Part 1
 
-def sum arr
+def sum (arr)
   # YOUR CODE HERE
  sumTotal=0
 
@@ -15,7 +15,7 @@ end
   return sumTotal
 end
 
-def max_2_sum arr
+def max_2_sum (arr)
   # YOUR CODE HERE
   if arr.length==0
 return 0
@@ -55,8 +55,23 @@ end
 return biggest+biggest2
 end
 
-def sum_to_n? arr, n
+def sum_to_n? (arr, n)
   # YOUR CODE HERE
+   # YOUR CODE HERE
+for i in 0..arr.length do
+
+
+for j in 1..arr.length do
+
+if i+j==n
+return true
+else
+return false
+
+end
+end
+
+end
 end
 
 # Part 2
