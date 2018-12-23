@@ -17,6 +17,42 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  if arr.length==0
+return 0
+end
+
+if arr.length==1
+return arr[0]
+end
+
+biggest=0
+biggest2=0
+
+for i in arr do
+
+if i>biggest
+biggest=i
+end
+end
+
+for i in 0..arr.length do
+
+if arr[i]==biggest
+arr.delete_at(i)
+break
+end
+end
+
+for i in arr do
+
+if i>biggest2
+biggest2=i
+end
+
+
+end
+
+return biggest+biggest2
 end
 
 def sum_to_n? arr, n
