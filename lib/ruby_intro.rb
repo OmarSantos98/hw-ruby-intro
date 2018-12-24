@@ -1,5 +1,12 @@
 # When done, submit this entire file to the autograder.
+# YOUR CODE HERE
 
+
+
+def price_as_string
+return "$#{"%.2f%",@price}"
+
+end
 # Part 1
 
 def sum (arr)
@@ -108,4 +115,15 @@ end
 
 class BookInStock
 # YOUR CODE HERE
+  # YOUR CODE HERE
+def initialize(isbn,price)
+@isbn = isbn
+@price = price
+end
+
+
+def price_as_string
+return "$#{"%.2f%",@price}"
+
+end
 end
