@@ -114,16 +114,24 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
-  # YOUR CODE HERE
-def initialize(isbn,price)
-@isbn = isbn
-@price = price
-end
 
+attr_accessor:isbn
+attr_accessor:price
+def initialize (isbn,price)
+  if isbn.length== 0
+    raise ArgumentError, 'isbn is empty!'
+  end
+  if price<=0 
+    raise ArgumentError, 'price is negative or zero!'
+  end
+  @isbn=isbn
+  @price=price
+  
+  
+end
 
 def price_as_string
-return "$#{"%.2f%",@price}"
-
+  return "$%.2f"%price   
 end
+
 end
